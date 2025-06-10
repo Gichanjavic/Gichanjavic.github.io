@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            background-image: url('https://images.unsplash.com/photo-1644325349124-d1756b79dd42?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        
+        
+        header {
+            position: fixed;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        nav a {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(-5px);
+        }
+        
+     
+        .welcome-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10%;
+            max-width: 600px;
+        }
+        
+        .welcome-container h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .intro-text {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+        
+        
+        .content-section {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(18, 18, 18, 0.6);
+            border-radius: 8px;
+            margin-bottom: 40px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .content-section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-content {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        /* ELEMENT STYLES */
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            line-height: 1.6;
+            text-align: left;
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #90caf9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+   
+    <section class="welcome-container">
+        <h1>WELCOME</h1>
+        <p class="intro-text">Victor Gichanja, Fullstack Web Developer</p>
+    </section>
+    
+ 
+    <main>
+        <section id="about" class="content-section">
+            <div class="section-content">
+                <img src="https://avatars.githubusercontent.com/u/197329181?v=4" alt="My Profile photo">
+                <p>Hi, I'm Victor Gichanja a dedicated Fullstack Web Developer who transforms ideas into powerful, scalable web applications. With expertise across both frontend and backend technologies, I craft seamless, intuitive digital experiences that not only work flawlessly but truly connect with users.</p>
+                <p>My passion lies in building reliable, efficient solutions using modern tools and frameworks, always with a focus on quality, performance, and maintainability. Whether it's creating smooth user interfaces or architecting robust serverside systems, I bring a thoughtful, problem-solving approach to every project.</p>
+                <h3>Education Background</h3>
+                <p>I earned my Bachelor's in Software Development from KCA University, building the foundation for my tech career. My secondary education at Kiambu High School taught me discipline, while Tigoni Primary School sparked my early curiosity for problem solving.</p>
+<h3>Interests</h3>
+<p>I like turning complex problems into elegant code solutions. Whether it's crafting smooth web applications, experimenting with new frameworks, or brainstorming better ways to automate tasks, I love how coding blends creativity with logic. The thrill of seeing my code come to life never gets old.</p>  
+<h3>SKILLS</h3>
+<UL>
+    <h4>Frontend</h4>
+<li>HTML5/CSS3</li>
+<li>JavaScript (ES6+)</li>
+<li>React.js</li>
+<li>Boostrap</li>
+<BR>
+<h4>Backend</h4>
+<li>Node.js</li>
+<li>Express.js</li>
+<li>Python</li>
+<li>Django</li>
+<BR>
+<h4>Databases</h4>
+<li>MongoDB</li>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<BR>
+<h4>Soft Skills</h4>
+<li>Problem Solving</li>
+<li>Team Collaboration</li>
+<li>Time Management</li>
+<li>Adaptability</li>
+
+</UL>          
+            </div>
+        </section>
+        
+        <section id="projects" class="content-section">
+            <div class="section-content">
+                <h2>My Projects</h2>
+                <ul>
+                    <li><strong>Hifadhi Wallet</strong> — A mobile banking app crafted to empower people in rural areas by making money management simple and accessible. With its user-friendly interface, Hifadhi Wallet helps users save, track, and manage their finances confidently, bridging the gap between technology and everyday banking needs.</li>
+                    <li><strong>PataPapers</strong> — A web platform designed specifically for students to effortlessly access, search, and download past exam papers. PataPapers streamlines revision and exam preparation, giving learners the resources they need to succeed right at their fingertips.</li>
+                    <li><strong>Portfolio Page</strong> — A clean and elegant personal portfolio website where I showcase my skills, projects, and collaborations. This page highlights my journey as a developer and serves as a professional hub to connect with potential collaborators and clients.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="contact" class="content-section">
+            <div class="section-content">
+                <h2>Contact Information</h2>
+                <p>You can reach out to me through the following:</p>
+                <ul>
+                    <li>Cellphone: +254 114731646</li>
+                    <li>Email: <a href="mailto:vgichanja14@gmail.com">vgichanja14@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/victor-gichanja" target="_blank">Victor Gichanja</a></li>
+                    <li>GitHub: <a href="https://github.com/Gichanjavic" target="_blank">Gich DEV</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+  
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const sections = document.querySelectorAll('.content-section');
+            
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    
+                    const currentActive = document.querySelector('.content-section.active');
+                    if (currentActive) {
+                        currentActive.classList.remove('active');
+                    }
+                    
+                    
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                        
+                        
+                        setTimeout(() => {
+                            targetSection.classList.add('active');
+                        }, 500);
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
